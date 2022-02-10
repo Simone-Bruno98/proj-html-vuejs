@@ -1,24 +1,29 @@
 <template>
   <div class="hello">
-   
-  </div>
+    <AvailableServices/>
+    <LearnMore/>
+    <Sponsors/>
+
+    </div>
 </template>
 
 <script>
-import whatsVA from './components/Macro/whatsVA.vue'
-import availableServices from './components/Macro/availableServices.vue'
-import sponsors from './components/Macro/sponsors.vue'
-import learnMore from './components/Macro/learnMore.vue'
+import AvailableServices from './Macro/AvailableServices.vue'
+import Sponsors from './Macro/Sponsors.vue'
+import LearnMore from './Macro/LearnMore.vue'
 
 export default {
   name: 'Main',
-  props: {
-    msg: String
+  components: {
+    AvailableServices,
+    Sponsors,
+    LearnMore,
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  .hello{
+  }
 </style>
